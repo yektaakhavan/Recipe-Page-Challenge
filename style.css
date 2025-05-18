@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    justify-content: flex-start;
+    max-width: 700px;
+    width: 100%;
+    gap: 20px;
+}
+
+img {
+    border-radius: 12px;
+}
+
+
+h1 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+
+.desc {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(30, 10%, 34%);
+}
+
+.prep-time-box {
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+.prep-time-box .title {
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.list li {
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.prep-time-box .list li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+
+.ingre .list li::marker,
+.instr .list li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+
+
+.ingre .title,
+.instr .title,
+.nut .title {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+ol.list {
+    list-style-type: decimal;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+td:first-child {
+    padding-left: 30px;
+}
+
+td:last-child {
+    font-weight: bold;
+    color: #7b3f1d;
+}
